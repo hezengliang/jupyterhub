@@ -28,5 +28,6 @@ services:
 ```
 
 ### Infomation
-Default User: jupyter / jupyter
-Enviroment "USERS" indicates all the users in the system, which seperated by comma (','). If the user does not exists, then the container will create it. Default password is the same as the username.
+Default User: jupyter / jupyter  
+Enviroment "USERS" indicates all the users in the system, which seperated by comma (',').   
+If the user does not exists, then the container will create it. Default password is the same as the username.
