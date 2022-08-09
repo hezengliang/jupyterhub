@@ -18,6 +18,7 @@ RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple notebook jupyterhub
 RUN mkdir /etc/jupyterhub && chmod 755 /opt/jupyterhub.sh && mkdir -p /data/jupyterhub && chmod -R 777 /data
 ADD jupyterhub_config.py /etc/jupyterhub/jupyterhub_config.py
 # RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+ADD requirements.txt /opt/requirements.txt
 RUN pip install jupyterlab astroid
 RUN jupyter labextension install @jupyterlab/hub-extension
 RUN jupyter serverextension enable --py jupyterlab --sys-prefix

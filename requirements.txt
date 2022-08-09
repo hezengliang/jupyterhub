@@ -1,0 +1,4 @@
+alembic==1.8.1
+anyio==3.6.1
+appdirs==1.4.4
+arrow==1.2.2

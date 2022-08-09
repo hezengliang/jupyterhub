@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hezengliang/jupyterhub:1.1.4 -t hezengliang/jupyterhub:latest .
+docker build -t hezengliang/jupyterhub:1.1.6 -t hezengliang/jupyterhub:latest .

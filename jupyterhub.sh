@@ -23,4 +23,5 @@ IFS=''
 node -v
 python -V
 
+pip install -r /opt/requirements.txt
 jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
