@@ -7,7 +7,7 @@ docker cli:
 ```bash
 docker run -it --name jupyterhub -p 38888:38888 -p 38081:38081 \
         -v <your_jupyterhub_path>/data:/data \
-        -v <your_requirements_path>/requirements.txt:/opt/requirements.txt \
+        --mount type=bind,source=<your_requirements_path>/requirements.txt,destination=/opt/requirements.txt \
         -e USERS=user1,user2 hezengliang/jupyterhub
 ```
 
