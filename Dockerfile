@@ -11,7 +11,7 @@ ADD sources.list /etc/apt/sources.list
 ADD jupyterhub.sh /opt/jupyterhub.sh
 RUN apt update && apt install -y sudo curl git && \
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - && \
-    apt update && apt install python3 python3-pip curl nodejs libffi-dev -y && \
+    apt update && apt install python3 python3-pip curl nodejs libffi-dev vim -y && \
     cd /usr/bin && ln -s python3 python  && \
     npm install -g configurable-http-proxy && \
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple notebook jupyterhub && \

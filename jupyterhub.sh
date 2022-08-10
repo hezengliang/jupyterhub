@@ -14,7 +14,7 @@ for oneUser in "${splitUsers[@]}"; do
     else
         echo "Create user ${oneUser}."
 	groupadd ${oneUser}
-	useradd -d /data/${oneUser} -m ${oneUser} -g ${oneUser} -G jupyter
+	useradd -d /data/${oneUser} -s /bin/bash -m ${oneUser} -g ${oneUser} -G jupyter
 	echo -e "${oneUser}\n${oneUser}" | passwd ${oneUser}
     fi
 done
